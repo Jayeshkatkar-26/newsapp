@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './NavBar';
 import React,{useState} from 'react'
 import News from './Components/News';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import { HashRouter,Routes,Route} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
 
@@ -19,7 +19,7 @@ const App = () =>{
   
     return (
       <div>
-        <Router>
+        <HashRouter>
         <NavBar/>
         <LoadingBar
         color='#f11946'
@@ -40,7 +40,7 @@ const App = () =>{
           
           </Routes>
 
-        </Router>
+        </HashRouter>
         
       </div>
     )
